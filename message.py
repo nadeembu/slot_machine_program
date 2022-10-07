@@ -1,3 +1,5 @@
+#!/usr/bin/python3.9
+
 # Simple hello Python script
 
 def hello_python(message):
