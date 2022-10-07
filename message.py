@@ -3,7 +3,7 @@
 # Simple hello Python script
 
 def hello_python(message):
-    print("Message passed to function is:", message)
+    print("\n", message, "\n")
 
-hello_python("Nadeem")
-
+message = input("What would you like to say? ")
+hello_python(message)
