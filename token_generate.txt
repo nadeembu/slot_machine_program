@@ -1,0 +1,32 @@
+When trying to push code to github.com. I get the following error:
+
+git push -u origin main
+/usr/local/share/gcm-core/git-credential-manager-core get: 1: /usr/local/share/gcm-core/git-credential-manager-core: not found
+Username for 'https://github.com': nadeembu
+Password for 'https://nadeembu@github.com': 
+/usr/local/share/gcm-core/git-credential-manager-core erase: 1: /usr/local/share/gcm-core/git-credential-manager-core: not found
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/nadeembu/slot_machine_program.git/
+
+To fix this problem. You need to generate a new token from the github website.
+You will then use the token to authenticate instead of your github login password.
+
+https://github.com/
+Go into...
+Settings
+Developer settings
+Personal access token
+Generate new token
+
+Note   : Enter anything
+Expiry : 7-90days, no expiry or custom
+Scopes : Define the level of access needed. 
+Choose : repo and anything else you want.
+
+Create token. 
+Copy token
+git push -u origin main
+username : nadeembu
+password : your_token
+
