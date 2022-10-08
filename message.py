@@ -2,8 +2,9 @@
 
 # Simple hello Python script
 
-def hello_python(message):
+def user_message(message):
     print("\n", message, "\n")
 
+
 message = input("What would you like to say? ")
-hello_python(message)
+user_message(message)
